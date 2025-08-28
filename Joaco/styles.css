@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center, #121212 0%, #0A0A0A 100%);
+    color: #E0E0E0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background: #121212;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(201, 162, 39, 0.2);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid #C9A227;
+    max-width: 450px;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(#C9A227, #E0E0E0, #C9A227, transparent 70%);
+}
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo h1 {
+    font-size: 28px;
+    color: #C9A227;
+    text-shadow: 0 0 10px rgba(201, 162, 39, 0.6);
+    letter-spacing: 1px;
+}
+.frase {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #B0BEC5;
+}
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-row {
+    display: block;
+    gap: 15px;
+}
+.form-row .form-group {
+    flex: 1;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    background: #121212;
+    color: #E0E0E0;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+}
+input:focus {
+    border-color: #D32F2F;
+}
+input::placeholder {
+    color: #B0BEC5;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #B71C1C;
+    color: #E0E0E0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #D32F2F;
+}
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #B0BEC5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.login-link:hover {
+    color: #D32F2F;
+}
+.container:hover {
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.4);
+}
+button:hover {
+    background: #D32F2F;
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
+}
+.transacciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                
+  padding: 40px 20px;
+  color: #f1f1f1;
+  background: #121212;
+}
+
+.transacciones h1 {
+  width: 100%;              
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #C9A227;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(201,162,39,0.6);
+}
+
+.transacciones .transacciones-box {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;             /* ancho fijo para que se vean como tarjetas */
+  border: 2px solid #C9A227;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  flex: 1 1 280px;          /* se adaptan al espacio */
+}
+
+.transacciones h3 {
+  margin-bottom: 15px;
+  color: #E0E0E0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.transacciones input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #C9A227;
+  border-radius: 8px;
+  background: #121212;
+  color: #E0E0E0;
+  font-size: 14px;
+}
+
+.transacciones input::placeholder {
+  color: #B0BEC5;
+}
+
+.transacciones button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #B71C1C;
+  color: #E0E0E0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.transacciones button:hover {
+  background: #D32F2F;
+  box-shadow: 0 0 10px rgba(211,47,47,0.4);
+}
+
+.transacciones #saldo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #4cafef;
+}
+
+/* 📱 Responsive: si la pantalla es pequeña, se apilan */
+@media (max-width: 768px) {
+  .transacciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transacciones .transacciones-box {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
