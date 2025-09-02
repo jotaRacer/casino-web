@@ -114,7 +114,7 @@ h1{
     margin-bottom: 20px;
 }
 .forgot {
-  align-self: flex-end;    /* alinea el link a la derecha */
+  align-self: flex-end;  
   font-size: 14px;
   text-decoration: none;
   color: #B0BEC5;
@@ -145,7 +145,8 @@ h1{
 }
 .form-group {
   display: flex;
-  flex-direction: column; /* apila label e input */
-  align-items: flex-start; /* alinea el label a la izquierda */
+  flex-direction: column; 
+  align-items: flex-start; 
   margin-bottom: 20px;
+  position: relative;
 }
