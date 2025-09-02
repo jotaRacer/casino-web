@@ -15,8 +15,6 @@ body {
     padding-top: 80px;
     flex-direction: column;
 }
-
-/* 🔥 NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -53,6 +51,33 @@ body {
     padding: 0;
 }
 
+.navbar-right {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.perfil-btn {
+    padding: 6px 14px;
+    border: 2px solid #C9A227;
+    border-radius: 6px;
+    background: transparent;
+    color: #C9A227;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 450px;
+    
+}
+
+.perfil-btn:hover {
+    background: #C9A227;
+    color: #121212;
+    box-shadow: 0 0 8px rgba(201, 162, 39, 0.5);
+}
+
 .navbar a {
     text-decoration: none;
     color: #E0E0E0;
@@ -66,24 +91,20 @@ body {
 }
 
 .login-btn {
-    padding: 6px 14px;
-    border: 2px solid #C9A227;
-    border-radius: 6px;
-    background: transparent;
-    color: #C9A227;
-    font-size: 13px;
-    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #B71C1C;
+    color: #E0E0E0;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .login-btn:hover {
-    background: #C9A227;
-    color: #121212;
-    box-shadow: 0 0 8px rgba(201, 162, 39, 0.5);
+    background: #D32F2F;
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
 }
-
-/* 🧩 FORMULARIO */
 .container {
     background: #121212;
     padding: 40px;
