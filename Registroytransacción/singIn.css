@@ -36,7 +36,10 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
+.logo-img {
+    height: 120px;
+    width: auto;
+}
 .navbar-center {
     display: flex;
     justify-content: center;
