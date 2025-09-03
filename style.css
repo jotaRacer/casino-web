@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 
 /* ================= NAVBAR ================= */
@@ -115,7 +115,7 @@ body {
 
 /* ================= REGISTRO ================= */
 .container {
-  margin-top: 40px;
+  margin-top: 125px;
   background: #121212;
   padding: 40px;
   border-radius: 12px;
@@ -199,7 +199,7 @@ body {
 
 /* ================= TRANSACCIONES ================= */
 .container2 {
-  margin-top: 40px;
+  margin-top: 150px;
   background: #121212;
   padding: 40px;
   border-radius: 12px;
@@ -246,7 +246,7 @@ body {
 .submit-btn2 {
   padding: 12px;
   width: 100%;
-  background: #C9A227;
+  background: #B71C1C;
   color: #121212;
   font-weight: bold;
   border: none;
@@ -272,6 +272,7 @@ body {
   width: 100%;
   border: 2px solid #C9A227;
   max-width: 800px;
+  margin-top: 10px;
 }
 
 .perfil-header {
@@ -370,11 +371,11 @@ table tr:nth-child(odd) {
   background: radial-gradient(circle at center, #121212 0%, #0A0A0A 100%);
   color: #E0E0E0;
   font-family: Arial, sans-serif;
-  padding-top: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  /* padding-top: 120px; */
 }
 
 /* ================= LOGIN FORM ================= */
@@ -386,6 +387,7 @@ table tr:nth-child(odd) {
   border: 2px solid #C9A227;
   max-width: 500px;
   width: 100%;
+  margin-top: 150px;
 }
 
 .login-title {
