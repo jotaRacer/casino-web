@@ -167,18 +167,18 @@ body {
   margin-top: 20px;
   padding: 14px;
   width: 100%;
-  background: #C9A227;
-  color: #121212;
+  background: #B71C1C;
+  color: #E0E0E0;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .submit-btn:hover {
-  background: #e6c23f;
-  box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+  background: #D32F2F;
+  box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
 }
 
 .alt-link {
@@ -187,9 +187,14 @@ body {
 }
 
 .alt-link a {
-  color: #C9A227;
+  color: #B71C1C;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.alt-link a:hover {
+  color: #D32F2F;
 }
 
 /* ================= TRANSACCIONES ================= */
@@ -333,7 +338,6 @@ table th {
 table tr:nth-child(even) {
   background: #2c2c2c;
 }
-
 table tr:nth-child(odd) {
   background: #1a1a1a;
 }
@@ -360,6 +364,7 @@ table tr:nth-child(odd) {
   box-shadow: 0 0 12px rgba(211, 47, 47, 0.5);
   transform: scale(1.05);
 }
+
 /* ================= LOGIN PAGE ================= */
 .login-page {
   background: radial-gradient(circle at center, #121212 0%, #0A0A0A 100%);
@@ -409,31 +414,42 @@ table tr:nth-child(odd) {
   width: 100%;
 }
 
+/* 🔴 Botón de login con estilo del navbar */
 .login-submit-btn {
-  background: #C9A227;
-  color: #121212;
+  background: #B71C1C;
+  color: #E0E0E0;
   font-weight: bold;
   border: none;
   padding: 14px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
 
 .login-submit-btn:hover {
-  background: #e6c23f;
-  box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+  background: #D32F2F;
+  box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
 }
 
+/* 🟥 Enlaces alternativos con estilo coherente */
 .login-alt-link,
 .login-forgot {
   text-align: center;
   margin-top: 15px;
   display: block;
-  color: #C9A227;
-  text-decoration: none;
   font-weight: bold;
 }
 
+.login-alt-link a,
+.login-forgot {
+  color: #B71C1C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.login-alt-link a:hover,
+.login-forgot:hover {
+  color: #D32F2F;
+}
+ 
