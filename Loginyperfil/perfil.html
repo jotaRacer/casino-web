@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+   <nav class="navbar">
+        <div class="navbar-left">
+            
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Casino</a></li>
+                <li><a href="#">Mesa</a></li>
+                <li><a href="#">Reglas</a></li>
+                <li><a href="#">Depósito</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <button type="submit" class="perfil-btn">Perfil</button>
+            <button type="submit" class="login-btn">Iniciar sesión</button>
+        </div>
+    </nav>
+
+  <div class="box perfil-container">
+
+    <div class="perfil-header">
+      <h1>Nombre de usuario</h1>
+      <p class="correo">ejemplo@mail.com</p>
+    </div>
+
+    <div class="perfil-info">
+      <h2>Información Personal</h2>
+      <p><strong>Fecha de nacimiento:</strong> 00/00/0000</p>
+      <p><strong>Ciudad:</strong> Santiago, Chile</p>
+    </div>
+
+    <div class="perfil-saldo">
+      <h2>Saldo Actual</h2>
+      <p class="saldo">$500.000.000</p>
+    </div>
+
+    <div class="perfil-transacciones">
+      <h2>Últimas 5 Transacciones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01/09/2025</td><td>Depósito</td><td>$100.000</td></tr>
+          <tr><td>30/08/2025</td><td>Apuesta</td><td>-$20.000</td></tr>
+          <tr><td>29/08/2025</td><td>Ganancia</td><td>$50.000</td></tr>
+          <tr><td>28/08/2025</td><td>Apuesta</td><td>-$10.000</td></tr>
+          <tr><td>27/08/2025</td><td>Depósito</td><td>$80.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="perfil-actions">
+      <a href="#" class="btn-ruleta">Ir a la Mesa de Ruleta</a>
+    </div>
+
+    <div class="perfil-actions">
+        <a href="#" class="btn-ruleta">Editar perfil</a>
+    </div>
+  </div>
+
+</body>
+</html>

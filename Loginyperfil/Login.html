@@ -7,17 +7,25 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="navbar-left">
+            
+        </div>
+        <div class="navbar-center">
             <ul>
-                <li><a href="#">Pagina de Inicio</a></li>
-                <li><a href="#">Registrarse</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Casino</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Reglas</a></li>
-                <li><a href="#">Perfil</a></li>
                 <li><a href="#">Mesa</a></li>
+                <li><a href="#">Reglas</a></li>
+                <li><a href="#">Depósito</a></li>
+                <li><a href="#">Nosotros</a></li>
             </ul>
-        </nav>
+        </div>
+        <div class="navbar-right">
+            <button type="submit" class="perfil-btn">Perfil</button>
+            <button type="submit" class="login-btn">Iniciar sesión</button>
+        </div>
+    </nav>
+
     <form method="post">
 
     <div class="box">
@@ -32,7 +40,7 @@
         <input type="password" id="password" name="password"  placeholder="Ingrese su contraseña">
        
     </div>
-         <button type="submit" class="button">Iniciar sesión</button>
+         <button type="submit" class="btn1">Iniciar sesión</button>
          <p class="alt-link">¿No tienes cuenta? <a href="/register">Regístrate</a></p>
           <a class="forgot" href="/forgot-password">¿Olvidaste tu contraseña?</a>
     </div>
