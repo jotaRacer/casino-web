@@ -115,7 +115,7 @@ body {
 
 /* ================= REGISTRO ================= */
 .container {
-  margin-top: 125px;
+  margin-top: 90px;
   background: #121212;
   padding: 40px;
   border-radius: 12px;
@@ -196,70 +196,96 @@ body {
 .alt-link a:hover {
   color: #D32F2F;
 }
+/* ================= TRANSACCIÓN ================= */
 
-/* ================= TRANSACCIONES ================= */
+/* Contenedor principal */
 .container2 {
-  margin-top: 150px;
+  max-width: 500px;
+  margin: 40px auto;
   background: #121212;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(201, 162, 39, 0.2);
   border: 2px solid #C9A227;
-  max-width: 600px;
-  width: 100%;
+  box-shadow: 0 20px 40px rgba(201, 162, 39, 0.2);
+}
+/* ==== Título de Transacciones ==== */
+.titulo-transaccion {
+  font-size: 32px;
+  color: #C9A227; 
   text-align: center;
+  margin-bottom: 12px; 
+  text-shadow: 0 0 12px rgba(201,162,39,0.35);
+  letter-spacing: 0.5px;
 }
 
-.logo2 h1 {
-  color: #C9A227;
-  margin-bottom: 20px;
-}
-
-.balance-info h2 {
-  margin-bottom: 20px;
-  color: #E0E0E0;
-}
-
-#transactionForm,
-#amount2 {
-  margin-bottom: 20px;
-}
-
-#transactionForm label,
-#amount2 label {
-  display: block;
-  margin-bottom: 10px;
+/* ==== Saldo Actual ==== */
+.container2 .saldo {
+  display: block;              
+  margin: 25px auto 40px auto; 
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #C9A227;
+  border-radius: 12px;
+  padding: 12px 24px;
+  text-align: center;
+  width: fit-content;        
+  font-size: 22px;
+  color: #FFEB3B;
   font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 235, 59, 0.8);
+  box-shadow: 0 0 15px rgba(201,162,39,0.3);
 }
 
-#transactionForm input,
-#amount2 input {
-  padding: 10px;
+
+/* Tarjetas internas */
+.card-transaccion {
+  background: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+}
+
+/* Etiquetas e inputs */
+.card-transaccion label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #E0E0E0;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.card-transaccion input {
   width: 100%;
+  padding: 10px;
+  font-size: 14px;
   border: 1px solid #444;
   border-radius: 6px;
   background: #1e1e1e;
   color: #E0E0E0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
-.submit-btn2 {
-  padding: 12px;
+/* Botón coherente con el resto del sitio */
+.card-transaccion button {
   width: 100%;
-  background: #B71C1C;
-  color: white;
-  font-weight: bold ;
-  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 8px;
+  background: #B71C1C;
+  color: #E0E0E0;
+  border: none;
   cursor: pointer;
-  transition: 0.3s ease;
-  font-size: 13px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.submit-btn2:hover {
+.card-transaccion button:hover {
   background: #D32F2F;
-  box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+  box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
 }
+
+
 
 /* ================= PERFIL ================= */
 .box {
@@ -388,7 +414,7 @@ table tr:nth-child(odd) {
   border: 2px solid #C9A227;
   max-width: 500px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .login-title {
