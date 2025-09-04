@@ -247,16 +247,17 @@ body {
   padding: 12px;
   width: 100%;
   background: #B71C1C;
-  color: #121212;
-  font-weight: bold;
+  color: white;
+  font-weight: bold ;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  font-size: 13px;
 }
 
 .submit-btn2:hover {
-  background: #e6c23f;
+  background: #D32F2F;
   box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
 }
 
