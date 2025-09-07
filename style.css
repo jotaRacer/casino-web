@@ -443,7 +443,7 @@ table tr:nth-child(odd) {
   width: 100%;
 }
 
-/* 🔴 Botón de login con estilo del navbar */
+/* Botón de login con estilo del navbar */
 .login-submit-btn {
   background: #B71C1C;
   color: #E0E0E0;
@@ -461,7 +461,7 @@ table tr:nth-child(odd) {
   box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
 }
 
-/* 🟥 Enlaces alternativos con estilo coherente */
+/* Enlaces alternativos con estilo coherente */
 .login-alt-link,
 .login-forgot {
   text-align: center;
@@ -1043,5 +1043,136 @@ footer {
                 grid-template-columns: repeat(4, 1fr);
             }
         }
+/* ================= RULETA ================= */
+.ruleta-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  
+/* Área principal de la ruleta */
+.area-ruleta {
+    flex: 2;
+    background-color: #1A1A1A;
+    border: 2px solid #C9A227;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.titulo-ruleta {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #C9A227;
+    margin-bottom: 1.5rem;
+}
+
+.ruleta-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Tarjetas dentro de la barra lateral */
+.ruleta-info-card {
+    background-color: #1A1A1A;
+    border: 2px solid #C9A227;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+.titulo-info-ruleta {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #C9A227;
+    margin-bottom: 0.75rem;
+}
+
+.status-ruleta {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    margin-bottom: 0.5rem;
+}
+
+.balance-ruleta {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* ================= ÚLTIMOS NÚMEROS ================= */
+.casino-ruleta-numbers-grid {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.casino-ruleta-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.casino-ruleta-number-red {
+    background-color: #B71C1C;
+}
+
+.casino-ruleta-number-black {
+    background-color: #0A0A0A;
+    border: 1px solid #E0E0E0;
+}
+
+.casino-ruleta-number-green {
+    background-color: #388E3C;
+}
+
+/* ================= TABLA DE APUESTAS ================= */
+.apuestas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.apuestas-table th {
+    background-color: #C9A227;
+    color: #121212;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.apuestas-table td {
+    padding: 0.65rem;
+    border-top: 1px solid #333;
+}
+
+.apuestas-table tr:nth-child(even) {
+    background-color: #1E1E1E;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .ruleta-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
